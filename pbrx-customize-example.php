@@ -1,35 +1,20 @@
 <?php
 /**
- * Plugin Name: PMPro Customizer
- * Plugin URI: http://testlab.sample.com/wiki/
- * Description: TAdd WordPress Customizer options to an installation with Paid Memberships Pro.
- * Version: 0.1.1
- * Author: pbrocks
- * Author URI: http://testlab.sample.com/wiki/
+ * Plugin Nam PBrx Customize Examples
+ * Description: Examples and a skeleton for hacking and creating new examples.
+ * Plugin URI:  https://github.com/pbrocks/pmpro-customize-example
+ * Author:      pbrocks, Weston Ruter, XWP
+ * Author URI:  https://make.xwp.co/
+ * Text Domain: pmpro-customize-example
+ * Domain Path: /languages
+ * Version:     0.1.0
+ *
+ * @package Customize_Featured_Content_Demo
  */
 
 namespace PMPro_Customizer;
 
-/**
- * Description
- *
- * @return type Words
- */
-// include( 'inc/functions/class-central-toggle-control.php' );
-require_once( 'autoload.php' );
 require_once __DIR__ . '/register-helper.php';
-
-
-// inc\classes\Admin_Menus::init();
-// inc\classes\Central_Toggle_Control::init();
-inc\classes\PMPro_Customizer::init();
-// inc\classes\Setup_Functions::init();
-// new inc\classes\Central_Toggle_Control();
-if ( ! class_exists( 'WordPress_Welcomes_You' ) ) {
-	 // new inc\classes\Central_Toggle_Control();
-	 new inc\classes\WordPress_Welcomes_You();
-}
-
 
 /**
  * Enqueue scripts for the customizer pane/controls/previewer.

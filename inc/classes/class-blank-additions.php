@@ -267,8 +267,8 @@ class Blank_Additions {
 		$home = get_blog_option( $blog_id, 'home' );
 		$siteurl = get_blog_option( $blog_id, 'siteurl' );
 
-		if ( function_exists( 'pbrx_get_authoring_domain' ) ) {
-			$auth_domain = pbrx_get_authoring_domain();
+		if ( function_exists( 'pmpro_get_authoring_domain' ) ) {
+			$auth_domain = pmpro_get_authoring_domain();
 		}
 
 		$mods = get_theme_mods();
@@ -282,7 +282,7 @@ class Blank_Additions {
 			} elseif ( 'current' === get_theme_mod( 'diagnostic_type' ) ) {
 				echo self::current_kovshenin();
 			} else {
-				if ( function_exists( 'pbrx_get_authoring_domain' ) ) {
+				if ( function_exists( 'pmpro_get_authoring_domain' ) ) {
 					print_r( $auth_domain );
 				} else {
 					echo 'No data available from sunrise.php';

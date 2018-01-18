@@ -45,7 +45,7 @@ class PMPro_Customizer {
 
 		self::pmpro_section( $pmpro_manager );
 		// self::pmpro_admin_section( $pmpro_manager );
-		// self::pbrx_core_footer( $pmpro_manager );
+		// self::pmpro_core_footer( $pmpro_manager );
 		// self::pmpro_advanced( $pmpro_manager );
 		self::some_theme_customizer_options( $pmpro_manager );
 	}
