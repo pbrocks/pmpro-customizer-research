@@ -20,9 +20,9 @@ require_once( 'autoload.php' );
 require_once __DIR__ . '/register-helper.php';
 
 
-// inc\classes\Admin_Menus::init();
 // inc\classes\Central_Toggle_Control::init();
 inc\classes\PMPro_Customizer::init();
+inc\classes\PMPro_Customizer_Additions::init();
 // inc\classes\Setup_Functions::init();
 // new inc\classes\Central_Toggle_Control();
 if ( ! class_exists( 'WordPress_Welcomes_You' ) ) {
